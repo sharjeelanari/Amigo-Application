@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SocialMain.AddPost.Project_add">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/projectHeadline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:hint="Whats your project based on? (Ex: Web dev, Arduino etc.)"
+            android:layout_alignParentTop="true"
+            />
+
+        <EditText
+            android:id="@+id/needDetails"
+            android:layout_width="match_parent"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/projectHeadline"
+            android:hint="skills required (Ex: python etc.)" />
+
+        <EditText
+            android:id="@+id/MoreIdea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:hint="Details on your project/idea"
+            android:layout_below="@+id/needDetails"
+            />
+
+        <EditText
+            android:id="@+id/Otherdet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:hint="Other details (Highlight your main requirement)"
+            android:layout_below="@+id/MoreIdea"
+            />
+
+        <TextView
+            android:id="@+id/showuser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Otherdet"
+            android:layout_margin="5dp"
+            android:text="Show under your username?"
+            />
+
+        <RadioGroup
+            android:id="@+id/usershow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Otherdet"
+            android:layout_toEndOf="@+id/showuser"
+            android:orientation="horizontal"
+            >
+
+        <RadioButton
+            android:id="@+id/Radioyes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yes"
+            />
+
+        <RadioButton
+            android:id="@+id/RadioNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No"
+            />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/addprojectbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/usershow"
+            android:layout_centerHorizontal="true"
+            android:text="Submit"/>
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

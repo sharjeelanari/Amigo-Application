@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:elevation="10dp"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="5dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:id="@+id/progressIns"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:layout_centerInParent="true"/>
+
+    <RelativeLayout
+        android:id="@+id/Relins"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:layout_margin="7dp"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/teacherprofile"
+            android:layout_width="40dp"
+            android:src="@drawable/user"
+            android:layout_height="40dp"/>
+
+
+            <TextView
+                android:id="@+id/ins_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ins_name"
+                android:textStyle="bold"
+                android:layout_margin="5dp"
+                android:layout_toEndOf="@+id/teacherprofile"
+                 />
+
+        <TextView
+            android:id="@+id/ins_button_reach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/ins_name"
+            android:layout_margin="5dp"
+            android:text="@string/ins_button_reach"
+            android:textColor="@color/purple_200"
+            />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/ins_domain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ins_domain"
+                android:orientation="horizontal"
+                android:layout_margin="5dp"
+                android:layout_below="@+id/teacherprofile"
+                 />
+
+
+
+            <TextView
+                android:id="@+id/ins_bio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ins_domain"
+                android:layout_margin="5dp"
+                android:text="@string/ins_bio"
+                 />
+
+
+    </RelativeLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

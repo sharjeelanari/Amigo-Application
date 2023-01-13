@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardCornerRadius="7dp"
+    android:id="@+id/addstudentcdview"
+    android:layout_margin="5dp"
+    app:cardElevation="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/studname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/studname"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/showstudentname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@id/studname"
+                android:text="@string/showstudname"
+
+                android:textColor="@color/black"
+
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/studusn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/studname"
+                android:layout_marginStart="10dp"
+                android:text="@string/studusn"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/showstudentusn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/studusn"
+                android:layout_marginStart="43dp"
+                android:layout_below="@id/studname"
+                android:text="@string/showstudusn"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/studbatch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/studusn"
+                android:layout_marginStart="10dp"
+                android:text="@string/studbatch"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/showattperc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/studusn"
+                android:layout_marginStart="43dp"
+                android:layout_below="@id/studusn"
+                android:layout_marginTop="10dp"
+                android:text="percentage"
+                android:textColor="@color/black"
+                android:textSize="20sp"/>
+
+
+            <Button
+                android:id="@+id/present"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Present"
+                android:layout_below="@+id/studbatch"
+                android:layout_centerHorizontal="true"
+                />
+
+            <Button
+                android:id="@+id/absent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Absent"
+                android:layout_below="@+id/present"
+                android:layout_centerHorizontal="true"
+                />
+
+        </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

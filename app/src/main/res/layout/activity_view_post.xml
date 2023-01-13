@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SocialMain.Social1.ViewPost">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        android:elevation="10dp">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/profileimgvp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/ic_baseline_account_circle_24" />
+
+            <TextView
+                android:id="@+id/nameuservp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toEndOf="@+id/profileimgvp"
+                android:text="@string/name"
+                android:textColor="@color/social_username_text"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/protopicstvvp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profileimgvp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:textColor="@color/social_username_text"
+                android:layout_marginBottom="5dp"
+                android:text="@string/projecttopics"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/needforprotvvp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Skills: "
+                android:textColor="@color/social_username_text"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:layout_below="@+id/protopicstvvp"
+                />
+
+            <com.borjabravo.readmoretextview.ReadMoreTextView
+                android:id="@+id/briefideaprotvvp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/needforprotvvp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:textColor="@color/social_username_text"
+                app:trimMode="trimModeLine"
+                app:trimLines="2"
+                app:colorClickableText="@color/brown50"
+                android:layout_marginBottom="5dp"
+                android:text="@string/Briefideaofp" />
+
+            <com.borjabravo.readmoretextview.ReadMoreTextView
+                android:id="@+id/briefrequirementvp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="More: "
+                app:colorClickableText="@color/grey_font"
+                android:textColor="@color/social_username_text"
+                app:trimMode="trimModeLine"
+                app:trimLines="2"
+                android:layout_below="@+id/briefideaprotvvp"
+                />
+
+
+            <ImageView
+                android:id="@+id/sharevp"
+                android:layout_width="31dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/ic_baseline_share_24"
+                android:layout_alignParentEnd="true"
+                />
+
+            <Button
+                android:id="@+id/reachprojectvp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/briefrequirementvp"
+                android:layout_centerHorizontal="true"
+                android:text="reach"/>
+
+
+        </RelativeLayout>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

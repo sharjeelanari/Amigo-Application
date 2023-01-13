@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Attendance.Attendanceactivity">
+
+
+    <TextView
+        android:id="@+id/addastudent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/addastudent"
+        android:textSize="20sp"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/black"/>
+    <Button
+        android:id="@+id/addstudentbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/addastudent"
+        android:text="@string/addstudentbtn"
+        android:layout_marginStart="40dp"/>
+
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/addastudent"
+        android:layout_marginTop="42dp">
+
+
+    </androidx.fragment.app.FragmentContainerView>
+
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:layout_below="@+id/fragment_container"-->
+<!--        android:id="@+id/recv"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="vertical">-->
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewpager2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/fragment_container">
+
+    </androidx.viewpager2.widget.ViewPager2>
+<!--    </androidx.recyclerview.widget.RecyclerView>-->
+
+</RelativeLayout>

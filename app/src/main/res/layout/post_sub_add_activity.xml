@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@drawable/shapes"
+    tools:context=".Subscription.PostSubAddActivity">
+
+
+
+        <EditText
+            android:id="@+id/addcompanyname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_margin="5dp"
+            android:hint="Companyname"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:inputType="text"/>
+        <EditText
+            android:id="@+id/addscreentype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_margin="5dp"
+            android:textSize="20sp"
+            android:layout_below="@id/addcompanyname"
+            android:hint="Screentype"
+            android:inputType="text"/>
+        <EditText
+            android:id="@+id/adddevices"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/addscreentype"
+            android:layout_margin="5dp"
+            android:textSize="20sp"
+            android:hint="Can be seen on devices"
+            android:layout_marginTop="10dp"
+            android:inputType="text"
+            />
+        <EditText
+            android:id="@+id/add_mem_no_avaiable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_margin="5dp"
+            android:layout_below="@id/adddevices"
+            android:hint="Number of members available"
+            android:inputType="number"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/add_mem_needed"
+            android:layout_marginTop="10dp"
+            android:layout_margin="5dp"
+            android:hint="Number of members needed"
+            android:layout_below="@id/add_mem_no_avaiable"
+            android:inputType="number"/>
+        <EditText
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/add_priceofsub"
+            android:layout_below="@id/add_mem_needed"
+            android:layout_margin="5dp"
+            android:inputType="number"
+            android:hint="Price per user Ex- Rs.100/-"
+            android:layout_marginTop="10dp"/>
+        <Button
+            android:id="@+id/postad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/add_priceofsub"
+            android:layout_marginTop="20dp"
+            android:text="@string/post_ad"
+            android:layout_marginStart="140dp"/>
+
+    </RelativeLayout>
+

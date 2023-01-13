@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/relativelayout"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="SocialMain.AddPost.Instructor_adddetails" >
+
+<FrameLayout
+    android:id="@+id/flayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rellayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/ins_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="NAME"
+            android:importantForAutofill="no"
+            android:inputType="text">
+
+        </EditText>
+
+        <EditText
+            android:id="@id/ins_bio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ins_name"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="BIO"
+            android:importantForAutofill="no"
+            android:inputType="text">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/ins_domain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ins_bio"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="DOMAIN"
+            android:importantForAutofill="no"
+            android:inputType="text">
+
+        </EditText>
+
+        <Button
+            android:id="@+id/ins_reach"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_marginStart="260dp"
+            android:layout_marginTop="80dp"
+            android:hint="Reach"/>
+
+
+    </RelativeLayout>
+
+</FrameLayout>
+
+</RelativeLayout>

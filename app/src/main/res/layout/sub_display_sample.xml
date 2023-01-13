@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:elevation="10dp"
+    android:layout_margin="5dp">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/companynameid"
+            android:text="@string/companyname"
+            android:layout_margin="5dp"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/screentype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/screentype"
+            android:textSize="17sp"
+            android:layout_below="@id/companynameid"
+            android:layout_margin="5dp"
+            />
+        <TextView
+            android:id="@+id/devicetype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/devices"
+            android:layout_below="@id/screentype"
+            android:layout_margin="5dp"
+            android:textSize="17sp"
+            />
+        <TextView
+            android:id="@+id/mem_available"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/members_available"
+            android:layout_below="@id/devicetype"
+            android:layout_margin="5dp"
+            android:textSize="17sp"
+
+
+            />
+
+        <TextView
+            android:id="@+id/mem_no_available"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/mem_available"
+            android:text="@string/mem_no_available"
+            android:textSize="17sp"
+            android:layout_below="@+id/devicetype"
+            android:layout_margin="5dp"
+            />
+        <TextView
+            android:id="@+id/mem_needed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/members_needed"
+            android:layout_below="@id/mem_available"
+            android:textSize="17sp"
+            android:layout_margin="5dp"
+            />
+        <TextView
+            android:id="@+id/mem_no_needed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/mem_needed"
+            android:layout_below="@id/mem_available"
+            android:text="@string/mem_no_needed"
+            android:textSize="17sp"
+            android:layout_margin="5dp"
+            />
+
+        <Button
+            android:id="@+id/btnsubs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mem_no_needed"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            android:text="Buy"
+            />
+
+        <TextView
+            android:id="@+id/priceofsub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/price_of_sub"
+            android:layout_alignParentEnd="true"
+            android:textSize="20sp"
+            android:layout_margin="5dp"/>
+
+
+
+
+
+
+    </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+

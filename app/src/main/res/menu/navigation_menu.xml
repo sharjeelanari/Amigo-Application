@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/homeicon"
+         android:icon="@drawable/soical_home_icon"
+         android:title="@string/home"/>
+
+    <item android:id="@+id/projecticon"
+        android:icon="@drawable/social_project_icon"
+        android:title="@string/project"/>
+
+    <item android:id="@+id/searchicon"
+        android:icon="@drawable/ic_icons8_search"
+        android:title="@string/search"
+        app:showAsAction="always"
+        app:actionViewClass="androidx.appcompat.widget.SearchView" />
+
+    <item android:id="@+id/notifyicon"
+        android:icon="@drawable/social_notification_icon"
+        android:title="@string/notification"/>
+
+    <item android:id="@+id/profileicon"
+        android:icon="@drawable/social_user_icon"
+        android:title="@string/user"/>
+
+
+
+
+
+</menu>

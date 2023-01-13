@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cdview"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:background="@drawable/shapes"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="10dp"
+        android:elevation="10dp"
+       >
+
+        <RelativeLayout
+            android:id="@+id/tcsamplerellayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/clubname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/clubname"
+                android:layout_centerInParent="true"
+                android:layout_margin="10dp"
+                android:textSize="20sp"/>
+<!--            <TextView-->
+<!--                android:id="@+id/leadname"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_alignParentRight="true"-->
+<!--                android:text="@string/leadname"-->
+<!--                android:layout_margin="10dp"-->
+<!--                android:textSize="20sp"/>-->
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

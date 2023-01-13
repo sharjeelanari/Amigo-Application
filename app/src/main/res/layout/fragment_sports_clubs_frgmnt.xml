@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="SportsAndCultural.Fragments.SportsClubsFrgmnt">
+
+
+    <ScrollView
+        android:id="@+id/Sportsscrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/SportsRelativelayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+<!--This Frame layout will fetch ads of upcoming events, recent highlights
+            and score (Kind of like Whats new-->
+
+                <TextView
+                    android:id="@+id/textUpcoming"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Events"
+                    android:layout_margin="10dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/upcomingrecyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+
+                    android:layout_below="@id/textUpcoming"
+                    android:background="@drawable/inputfield"
+                    />
+
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/SportsRecycler"
+                    android:layout_width="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_below="@+id/upcomingrecyclerview"
+                    android:layout_height="wrap_content"/>
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>

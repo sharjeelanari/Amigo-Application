@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="10dp"
+    android:layout_margin="7dp"
+    >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profileimg"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/ic_baseline_account_circle_24" />
+
+            <TextView
+                android:id="@+id/nameuser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toEndOf="@+id/profileimg"
+                android:text="@string/name"
+                android:textColor="@color/social_username_text"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/protopicstv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profileimg"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/projecttopics"
+                android:textColor="@color/social_username_text"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/needforprotv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Skills: "
+                android:textColor="@color/social_username_text"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:layout_below="@+id/protopicstv"
+                />
+
+            <com.borjabravo.readmoretextview.ReadMoreTextView
+                android:id="@+id/briefideaprotv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/needforprotv"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:textColor="@color/social_username_text"
+                app:trimMode="trimModeLine"
+                app:trimLines="2"
+                app:colorClickableText="@color/grey_font"
+                android:layout_marginBottom="5dp"
+                android:text="@string/Briefideaofp" />
+
+         <com.borjabravo.readmoretextview.ReadMoreTextView
+             android:id="@+id/briefrequirement"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_margin="5dp"
+             android:text="More: "
+             app:colorClickableText="@color/grey_font"
+             android:textColor="@color/social_username_text"
+             app:trimMode="trimModeLine"
+             app:trimLines="2"
+             android:layout_below="@+id/briefideaprotv"
+              />
+
+
+            <ImageView
+                android:id="@+id/share"
+                android:layout_width="31dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/ic_baseline_share_24" />
+
+            <Button
+                android:id="@+id/reachproject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/briefrequirement"
+                android:layout_centerHorizontal="true"
+                android:text="reach"/>
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>

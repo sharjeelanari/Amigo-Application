@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".SportsAndCultural.SportsCultural.SportDetails">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/nameofsport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/upcmng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:layout_below="@+id/nameofsport"
+        android:layout_alignParentLeft="true"
+        android:textSize="50sp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:text="!Under Construction!" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/upcmngrecycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/upcmng"/>
+
+    <TextView
+        android:id="@+id/team"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:layout_below="@+id/upcmngrecycler"
+        android:layout_alignParentLeft="true"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:text="TEAM" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/teamrecycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/team" />
+
+    <TextView
+        android:id="@+id/pstrecords"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:layout_below="@+id/teamrecycler"
+        android:layout_alignParentLeft="true"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:text="PAST RECORDS" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/pastrecordsrecycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pstrecords" />
+
+    </RelativeLayout>
+
+
+
+
+</ScrollView>

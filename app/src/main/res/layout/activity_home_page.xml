@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/hometoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="25sp"
+                android:id="@+id/adminpanel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Admin Panel"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true" />
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/ammmmremovebgpreview"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" />
+
+
+
+
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <ProgressBar
+        android:id="@+id/progress_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="visible"
+        />
+
+   <LinearLayout
+       android:id="@+id/linearHome"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/hometoolbar"
+       android:orientation="vertical"
+       android:visibility="invisible"
+       >
+
+       <FrameLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+           <androidx.viewpager2.widget.ViewPager2
+               android:id="@+id/homepageslider"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="horizontal"
+               android:paddingStart="70dp"
+               android:paddingEnd="70dp"
+               />
+
+       </FrameLayout>
+
+
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Calendar of events"
+           android:textSize="25sp"
+           android:layout_marginTop="20dp"
+           android:layout_marginLeft="15dp"
+           android:textStyle="bold"/>
+
+       <androidx.cardview.widget.CardView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_margin="15dp"
+           android:elevation="10dp"
+           app:cardCornerRadius="20dp"
+           >
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="200dp"
+               android:orientation="vertical">
+
+
+
+<!--               <androidx.recyclerview.widget.RecyclerView-->
+<!--                   android:layout_width="match_parent"-->
+<!--                   android:layout_height="wrap_content"-->
+<!--                   android:orientation="horizontal">-->
+
+
+           <androidx.viewpager2.widget.ViewPager2
+               android:id="@+id/calEventsVp"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_gravity="center"
+               android:orientation="horizontal"/>
+<!--               </androidx.recyclerview.widget.RecyclerView>-->
+
+           </LinearLayout>
+       </androidx.cardview.widget.CardView>
+
+
+   </LinearLayout>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        >
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/bottomappbarhome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            app:fabAlignmentMode="center"
+            app:fabCradleRoundedCornerRadius="10dp"
+            android:backgroundTint="@color/white"
+            app:fabCradleMargin="10dp"
+            >
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottombarHome"
+                android:layout_width="match_parent"
+                android:defaultFocusHighlightEnabled="true"
+                android:focusedByDefault="true"
+                android:layout_marginEnd="16dp"
+                app:labelVisibilityMode="labeled"
+                android:layout_height="wrap_content"
+                app:menu="@menu/home_navigation"
+                android:background="@color/white"
+                />
+
+        </com.google.android.material.bottomappbar.BottomAppBar>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabSocialHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:maxImageSize="50dp"
+            app:fabCustomSize="60dp"
+            android:src="@drawable/amigosocial"
+            android:contentDescription="Social"
+            app:backgroundTint="@color/white"
+            app:layout_anchor="@id/bottomappbarhome"/>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</RelativeLayout>

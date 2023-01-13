@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EliteDivision.EliteDivisionActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+<!--    <androidx.appcompat.widget.Toolbar-->
+<!--        android:id="@+id/toolbarid"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+
+<!--    </androidx.appcompat.widget.Toolbar>-->
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarIcode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/textgreenish"
+            >
+
+        <TextView
+            android:id="@+id/icodeaboutus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/icode_aboutus"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="71dp"
+            android:layout_height="26dp"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@id/icodeaboutus"
+            android:src="@drawable/picture1" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <TextView
+            android:id="@+id/icodedetails"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:textColor="@color/black"
+            android:letterSpacing="0.03"
+            android:textSize="18sp"
+            android:lineSpacingExtra="4dp"
+            android:layout_height="wrap_content"
+            android:text="@string/icode_details"
+
+            android:layout_below="@id/toolbarIcode"/>
+
+
+        <ImageView
+            android:background="@color/white"
+            android:id="@+id/icodewhatitdoes"
+            android:layout_width="match_parent"
+            android:layout_height="219dp"
+            android:layout_below="@id/icodedetails"
+            android:layout_marginTop="0dp"
+            android:padding="10dp"
+            android:src="@drawable/icodeobjs" />
+
+<!--    <androidx.appcompat.widget.Toolbar-->
+<!--        android:id="@+id/toolbarid"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        >-->
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content">-->
+
+
+<!--            <TextView-->
+<!--                android:id="@+id/applogo"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="@string/app_logo"-->
+<!--                android:layout_centerHorizontal="true"-->
+<!--                android:textSize="25sp"-->
+<!--                android:textStyle="bold"-->
+<!--                android:layout_marginTop="8dp"-->
+<!--                />-->
+
+<!--            <Button-->
+<!--                android:id="@+id/socialbtn"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_alignParentRight="true"-->
+<!--                android:layout_marginRight="20dp"-->
+<!--                android:text="@string/socialbtn"/>-->
+<!--        </RelativeLayout>-->
+<!--    </androidx.appcompat.widget.Toolbar>-->
+
+    <TextView
+        android:id="@+id/upcmngelite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upcoming events"
+        android:textStyle="normal"
+        android:layout_below="@+id/icodewhatitdoes"
+        android:layout_marginStart="20dp"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"/>
+
+   <androidx.recyclerview.widget.RecyclerView
+       android:id="@+id/fmlayoutelite"
+       android:layout_width="match_parent"
+       android:layout_height="280dp"
+       android:layout_below="@id/upcmngelite"
+       android:layout_margin="10dp"
+       android:background="@drawable/inputfield"
+       android:layout_marginTop="15dp">
+
+   </androidx.recyclerview.widget.RecyclerView>
+
+<!--    <Button-->
+<!--        android:id="@+id/freelancebtn"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/fmlayoutelite"-->
+<!--        android:layout_marginStart="7dp"-->
+<!--        android:layout_marginTop="7dp"-->
+<!--        android:layout_marginEnd="7dp"-->
+<!--        android:layout_marginBottom="7dp"-->
+<!--        android:backgroundTint="@color/brown50"-->
+<!--        android:elevation="10dp"-->
+<!--        android:text="@string/freelancebtn"-->
+<!--        android:textColor="@color/brown600"-->
+<!--        android:textSize="20sp" />-->
+
+<!--        <androidx.recyclerview.widget.RecyclerView-->
+<!--            android:id="@+id/eliterecview"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@id/freelancebtn"-->
+<!--            android:layout_marginStart="15dp"-->
+<!--            android:layout_marginTop="5dp" />-->
+
+    <!-- TODO: To put in recycler View -->
+
+    <TextView
+        android:id="@+id/icodenotes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fmlayoutelite"
+        android:text="@string/icode_notes"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:id="@+id/icodenote1"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/icodenotes"
+        android:layout_marginTop="9dp"
+        android:src="@drawable/bookmark_unfilled" />
+    <TextView
+        android:id="@+id/boot1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/icodenote1"
+        android:text="@string/icode_note1"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        />
+
+    <ImageView
+        android:id="@+id/icodenote2"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/icodenotes"
+        android:layout_toRightOf="@id/icodenote1"
+        android:layout_marginTop="9dp"
+        android:layout_marginStart="90dp"
+        android:src="@drawable/bookmark_unfilled" />
+    <TextView
+        android:id="@+id/boot2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/icodenote2"
+        android:layout_toRightOf="@id/icodenote1"
+        android:layout_marginStart="90dp"
+        android:text="@string/icode_note2"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        />
+
+    <ImageView
+        android:id="@+id/icodenote3"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/icodenote1"
+        android:layout_toRightOf="@id/icodenote1"
+        android:layout_marginTop="9dp"
+        android:layout_marginStart="7dp"
+        android:src="@drawable/bookmark_unfilled" />
+    <TextView
+        android:id="@+id/boot3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/icodenote3"
+        android:layout_toRightOf="@id/icodenote1"
+        android:layout_marginStart="7dp"
+        android:text="@string/icode_note3"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        />
+    <ImageView
+        android:id="@+id/icodenote4"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/icodenote2"
+        android:layout_toRightOf="@id/icodenote2"
+        android:layout_marginTop="9dp"
+        android:layout_marginStart="7dp"
+        android:src="@drawable/bookmark_unfilled" />
+
+    <TextView
+        android:id="@+id/boot4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/icodenote2"
+        android:layout_below="@id/icodenote4"
+        android:padding="8dp"
+        android:text="@string/icode_note4"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content">-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/tcmenuid"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_alignParentStart="true"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:src="@drawable/menu" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/applogo"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="100dp"-->
+<!--                android:layout_marginTop="8dp"-->
+<!--                android:layout_toEndOf="@id/tcmenuid"-->
+<!--                android:text="@string/app_logo"-->
+<!--                android:textSize="25sp"-->
+<!--                android:textStyle="bold" />-->
+
+<!--            <Button-->
+<!--                android:id="@+id/socialbtn"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_alignParentRight="true"-->
+<!--                android:layout_marginRight="20dp"-->
+<!--                android:text="@string/socialbtn" />-->
+<!--        </RelativeLayout>-->
+    </RelativeLayout>
+</ScrollView>
+

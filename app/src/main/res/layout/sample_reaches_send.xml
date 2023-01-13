@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/bottomborder"
+        >
+
+        <TextView
+            android:id="@+id/textsendname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:textStyle="bold"
+            android:text="Name"
+            android:textSize="18sp"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:id="@+id/timesend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/textsendname"
+            android:textSize="14sp"
+            android:text="time"
+            android:layout_margin="5dp"
+            android:textStyle="italic"/>
+
+
+
+    <TextView
+        android:id="@+id/sendertext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/textsendname"
+        android:textSize="15sp"
+        android:text="TextView" />
+
+    </RelativeLayout>
+    </RelativeLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OtpSignup.ClubLogin">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="20dp"
+        app:cardElevation="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/clbemail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="20dp"
+                android:background="@drawable/inputfield"
+                android:ems="10"
+                android:textSize="40sp"
+                android:hint="Club Email"
+                android:inputType="textEmailAddress"
+                android:visibility="visible"
+                android:padding="10dp"
+                />
+
+            <EditText
+                android:id="@+id/clbpass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/clbemail"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="20dp"
+                android:background="@drawable/inputfield"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:textSize="40sp"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/clbloginbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/clbpass"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="20dp"
+                android:text="Log in"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/createclub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Register as a club"
+                android:layout_below="@+id/clbloginbtn"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="20dp"
+                android:textSize="40sp"
+                android:textColor="@color/purple_200"/>
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

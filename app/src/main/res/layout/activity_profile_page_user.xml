@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SocialMain.Social1.ProfilePage.ProfilePage">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/ic_baseline_account_circle_24" />
+
+
+        <TextView
+            android:id="@+id/usernameprofile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dp"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="7dp"
+            android:text="Username"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/reachprofile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/usernameprofile"
+            android:layout_marginLeft="7dp"
+            android:text="Reach" />
+
+        <TextView
+            android:id="@+id/skills"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_margin="5dp"
+            android:layout_below="@id/reachprofile"
+            android:text="Skill set " />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/skillrec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/skills"
+            android:layout_margin="5dp"
+            />
+
+        <TextView
+            android:id="@+id/Projects"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+            android:textSize="20sp"
+            android:layout_below="@+id/skillrec"
+            android:text="Projects" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/projectrec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_below="@+id/Projects" />
+
+
+        <TextView
+            android:id="@+id/Bio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_margin="5dp"
+            android:textSize="15sp"
+            android:layout_toEndOf="@+id/dp"
+            android:text="Bio" />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/profiletab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/projectrec"
+            android:layout_marginTop="5dp"
+            android:elevation="7dp" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/userprojects"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profiletab" />
+
+    </RelativeLayout>
+
+</ScrollView>

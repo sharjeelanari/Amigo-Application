@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="SocialMain.Social1.FragmentsSocial.UserFragment">
+    
+    <ProgressBar
+        android:id="@+id/progress_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="visible"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    <RelativeLayout
+        android:id="@+id/relUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        >
+
+        <RelativeLayout
+            android:id="@+id/relLay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/usernameprofile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/editprofileimg"
+                android:padding="5dp"
+                android:elevation="10dp"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:text="name" />
+
+            <ImageView
+                android:id="@+id/editprofileimg"
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:layout_alignParentTop="true"
+                android:adjustViewBounds="true"
+                android:src="@drawable/social_user_icon"
+                android:cropToPadding="true"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/logout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_toLeftOf="@+id/usernameprofile"
+                android:layout_alignBottom="@+id/editprofileimg"
+                android:layout_margin="5dp"
+                android:elevation="10dp"
+                android:drawableStart="@drawable/ic_outline_exit_to_app_24"/>
+
+            <Button
+                android:id="@+id/changedpconfirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editprofileimg"
+                android:layout_alignParentRight="true"
+                android:layout_margin="5dp"
+                android:text="confirm"
+                android:visibility="invisible" />
+
+
+            <TextView
+                android:id="@+id/editskills"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editprofileimg"
+                android:layout_margin="5dp"
+                android:padding="3dp"
+                android:textSize="25sp"
+                android:text="Skill set"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/addskillbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editprofileimg"
+                android:layout_alignParentEnd="true"
+                android:drawableStart="@drawable/ic_baseline_edit_24"
+                android:layout_margin="8dp"
+                android:textSize="17sp"
+                android:visibility="visible" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/skillsrec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/skilladd"
+                android:layout_margin="8dp"
+                />
+
+            <EditText
+                android:id="@+id/addskillname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editskills"
+                android:layout_margin="8dp"
+                android:ems="7"
+                android:hint="Skill Name"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/addskilldetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/addskillname"
+                android:layout_margin="8dp"
+                android:hint="efficiency: "
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/skilladd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/addskilldetails"
+                android:background="@drawable/ic_baseline_add_box_24"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/editprojects"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/skillsrec"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:textSize="25sp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:padding="3dp"
+                android:text="Experiences/Projects "
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/editprojectsrecycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/projectadd"
+                android:layout_margin="8dp"
+                 />
+
+
+            <TextView
+                android:id="@+id/addprojectbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/skillsrec"
+                android:layout_alignParentEnd="true"
+                android:drawableStart="@drawable/ic_baseline_edit_24"
+                android:textSize="17sp"
+                android:layout_margin="8dp"
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/addprojectName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editprojects"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:ems="5"
+                android:hint="Department: "
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/addprojectdetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/addprojectName"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:ems="5"
+                android:hint="What did you learn?"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/addprojectlink"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/addprojectdetails"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:ems="5"
+                android:hint="Link to the project(Github, Video, Drive etc)"
+                android:visibility="gone" />
+
+
+
+            <ImageButton
+                android:id="@+id/projectadd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/addprojectlink"
+                android:background="@drawable/ic_baseline_add_box_24"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/editbio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editprojectsrecycler"
+                android:layout_margin="5dp"
+                android:padding="3dp"
+                android:textSize="25sp"
+                android:text="About you "
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/biotxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editbio"
+                android:visibility="visible"
+                android:text="biotxt"
+                android:textSize="18sp"
+                android:layout_margin="8dp"/>
+
+
+            <TextView
+                android:id="@+id/addbio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editprojectsrecycler"
+                android:layout_alignParentEnd="true"
+                android:drawableStart="@drawable/ic_baseline_edit_24"
+                android:textSize="17sp"
+                android:layout_margin="8dp"
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/updatebio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editbio"
+                android:layout_margin="8dp"
+                android:ems="7"
+                android:hint="Update Bio: "
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/bioadd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/updatebio"
+                android:layout_margin="8dp"
+                android:background="@drawable/ic_baseline_add_box_24"
+                android:visibility="gone" />
+
+
+            <TextView
+                android:id="@+id/aboutclub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editprofileimg"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:padding="3dp"
+                android:text="About us: "
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/addaboutclub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:drawableStart="@drawable/ic_baseline_edit_24"
+                android:layout_below="@+id/editprofileimg"
+                android:layout_alignParentEnd="true"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/aboutclubtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/aboutclub"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:padding="3dp"
+                android:text="About us: "
+                android:textSize="18sp"
+                android:textStyle="normal"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/updateaboutclub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/aboutclub"
+                android:layout_margin="8dp"
+                android:ems="7"
+                android:hint="Update Bio: "
+                android:inputType="textMultiLine"
+                android:isScrollContainer="true"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/aboutclubadd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/updateaboutclub"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="3dp"
+                android:background="@drawable/ic_baseline_add_box_24"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/Yourevents"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your Events"
+                android:visibility="gone"
+                android:layout_margin="5dp"
+                android:textStyle="bold"
+                android:padding="3dp"
+                android:textSize="22sp"
+                android:layout_below="@+id/editprojectsrecycler"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/eventsrec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Yourevents"
+                android:visibility="gone"
+                android:layout_margin="8dp"
+                android:background="@drawable/inputfield"
+                />
+
+            <TextView
+                android:id="@+id/addevent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editprojectsrecycler"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="5dp"
+                android:drawableStart="@drawable/ic_baseline_edit_24"
+                android:textSize="17sp"
+                android:visibility="gone" />
+
+            <FrameLayout
+                android:id="@+id/addeventframe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/eventsrec"
+                android:visibility="gone"
+                />
+
+        </RelativeLayout>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabcliubposts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relLay"
+            android:visibility="gone"
+            />
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/view_club_posts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tabcliubposts"
+            android:visibility="gone"
+            />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/usertabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="7dp"
+            android:visibility="visible"
+            android:layout_below="@+id/relLay"/>
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/uservp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/usertabs"
+            android:visibility="invisible"
+            />
+
+
+        <FrameLayout
+            android:id="@+id/studentposts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/usertabs"
+            android:visibility="visible"/>
+
+    </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

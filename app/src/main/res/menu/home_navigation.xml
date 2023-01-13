@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/sportsIcon"
+        android:icon="@drawable/sports"
+        android:title="Sports"/>
+
+    <item android:id="@+id/culturalIcon"
+        android:icon="@drawable/theater1"
+        android:title="Cultural"/>
+
+    <item android:id="@+id/floating"
+          android:title=""/>
+
+    <item android:id="@+id/icodeIcon"
+        android:icon="@drawable/picture1"
+        android:title="ICode"
+        />
+
+    <item android:id="@+id/TechIcon"
+        android:icon="@drawable/programmingcodesigns"
+        android:title="Tech Clubs"/>
+
+</menu>

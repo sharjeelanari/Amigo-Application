@@ -1,0 +1,127 @@
+<resources>
+    <string name="app_name">CollegeAppFirstAssemble</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="home">Home</string>
+    <string name="project">Project</string>
+    <string name="search">Search</string>
+    <string name="notification">Notification</string>
+    <string name="user">User</string>
+    <string name="logo">LOGO</string>
+    <string name="socialbt">SOCIAL</string>
+    <string name="descriptiontextview">Description about post</string>
+    <string name="name">Name</string>
+    <string name="checkbox">10 approves</string>
+
+
+    <string name="title_activity_projecttrial">projecttrial</string>
+    <string name="tab_text_1">Available Projects</string>
+    <string name="tab_text_2">Find a member</string>
+    <string name="tab_text_3">Instructor</string>
+
+    <string name="title_activity_tabbed_project">TabbedProjectActivity</string>
+    <string name="title_activity_project_tabbed">ProjectTabbedActivity</string>
+
+    <!-- project trials-->
+
+    <!--strings of project section-->
+    <string name="projecttopics">Project topics</string>
+    <string name="Briefideaofp">Brief idea of project</string>
+    <string name="Needforproject">Nedd for the project</string>
+    <string name="Usernameproject">User Name / Anonymous user</string>
+
+
+    <!-- instructor declaration-->
+    <string name="ins_name">"Mr.sarjeel"</string>
+    <string name="ins_domain">"E.C.E"</string>
+    <string name="ins_bio">Very good knowledge in ece and cse field</string>
+    <string name="ins_button_reach">Reach</string>
+    <string name="socialbtn">SOCIAL</string>
+    <string name="addastudent">Add a Student</string>
+    <string name="addstudentbtn">Add</string>
+    <string name="studname">Student Name :-</string>
+    <string name="studusn">Student Usn :-</string>
+    <string name="studbatch">Student Batch :-</string>
+    <string name="teachername">Teacher name :-</string>
+    <string name="sem">Semester :-</string>
+    <string name="subject">Subject :-</string>
+
+
+    <string name="addstuddetails">Add Student</string>
+    <string name="showstudname">Show student name</string>
+    <string name="showstudusn">Show student usn</string>
+    <string name="showstudbranch">Show student branch</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="addaclasstv">Add a class</string>
+    <string name="addaclassbtn">Add</string>
+
+    <string name="app_logo">LOGO</string>
+    <string name="techclub">TECH CLUBS</string>
+    <string name="addclub">ADD A CLUB</string>
+    <string name="projects">PROJECTS</string>
+    <string name="textinupcoming">Upcoming/Recent events/Workshops</string>
+    <string name="clubname">Google Club</string>
+    <string name="leadname">Lead name</string>
+    <string name="tvadd">Add Details of Club</string>
+    <string name="postclub">Add club</string>
+    <string name="cnamedisplay">Club name</string>
+    <string name="lead">Name of lead :- </string>
+    <string name="club_members">Club Volunteers</string>
+    <string name="add_mem">Add</string>
+    <string name="add_club_mem">Add member</string>
+    <string name="social_button">SOCIAL</string>
+    <string name="postsubscriptiontv">Post a Subscription ad</string>
+    <string name="postsubsbutton">Post ad</string>
+    <string name="companyname">NETFLIX</string>
+    <string name="screentype">Separate Screen</string>
+    <string name="devices">Laptop,T.V,Mobile</string>
+    <string name="members_available">Available members:</string>
+    <string name="mem_no_available">4</string>
+    <string name="members_needed">Members Needed:</string>
+    <string name="mem_no_needed">1</string>
+    <string name="reach_button">Reach</string>
+    <string name="price_of_sub">Rs.100</string>
+    <string name="post_ad">Post Ad</string>
+
+    <string name="upc_events">UPCOMING EVENTS</string>
+    <string name="freelancebtn">Freelance</string>
+    <string name="Elite_ece">ELITE ECE DIVISION</string>
+    <string name="addf_post">ADD FREELANCE POST</string>
+    <string name="addf_postbtn">Add Post</string>
+
+    <!-- addfreelancepost-->
+    <string name="freelance_topic">Topic ex-Android studio</string>
+    <string name="freelance_work">Work of person</string>
+    <string name="freelance_deadline">Work Deadline</string>
+    <string name="freelance_skills">Skills Required</string>
+    <string name="freelance_price">Total Amount to be paid</string>
+    <string name="freelance_desc">Work Description</string>
+    <string name="freelance_postbtn">Post Work</string>
+
+    <!-- samplefreelancedisplay-->
+    <string name="f_topic">Name of topic</string>
+    <string name="f_work">Work to do</string>
+    <string name="f_deadline">Word Deadline</string>
+    <string name="f_skills">Skills Required</string>
+    <string name="f_salary">Salary</string>
+    <string name="f_desc">Work Description</string>
+    <string name="f_userques">Why do you want to work for this</string>
+    <string name="f_apply">Apply</string>
+
+    <string name="icode_details">Center to Enhance coding skills in students through Bootcamps.
+Educate students through webinars on topics of Cutting Edge Technologies needed to be Industry ready.
+MOUs with Coding Ninja and Newton school gives resource persons for our events.
+Collaboration with technical clubs of CSE and ISE, FETJU. ICode promotes and sponsor events to department clubs and participate in each others events.
+ICode is associated with students of Jayanagar 9th block and JIRS campus.</string>
+
+    <string name="icode_notes">NOTES</string>
+    <string name="icode_aboutus">About </string>
+    <string name="icode_note1">Bootcamp 1</string>
+    <string name="icode_note2">Bootcamp 2</string>
+    <string name="icode_note3">Bootcamp 3</string>
+    <string name="icode_note4">Bootcamp 4</string>
+
+    <string name="club_name">Literature Club</string>
+
+</resources>

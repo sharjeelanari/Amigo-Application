@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".AdminPanel.AdminPanel">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/clubsignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="15dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/registeraclub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Register a Club"
+                android:textSize="50sp"
+                android:layout_margin="8dp"
+                android:textStyle="bold"
+                android:layout_alignParentTop="true"
+                />
+
+            <EditText
+                android:id="@+id/clubemail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/registeraclub"
+                android:layout_margin="8dp"
+                android:hint="Club email"
+                android:inputType="textEmailAddress"
+                android:textSize="35sp" />
+
+            <EditText
+                android:id="@+id/ClubName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Club Name"
+                android:inputType="text"
+                android:textSize="35sp"
+                android:layout_margin="8dp"
+                android:layout_below="@+id/clubemail"/>
+
+            <EditText
+                android:id="@+id/ClubLead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Club lead"
+                android:textSize="35sp"
+                android:layout_margin="8dp"
+                android:inputType="textPersonName"
+                android:layout_below="@id/ClubName"/>
+
+            <EditText
+                android:id="@+id/clubPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ClubLead"
+                android:layout_margin="8dp"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textSize="35sp" />
+
+            <Button
+                android:id="@+id/clubsignupsubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="submit"
+                android:textSize="35sp"
+                android:layout_below="@id/clubPass"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/removeposts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/clubsignup"
+            android:layout_margin="15dp"
+            android:textSize="35sp"
+            android:text="Remove a post" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/freelancepostadd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shapes"
+        app:cardElevation="10dp"
+        android:layout_below="@+id/removeposts"
+        android:layout_margin="15dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/addfreelancepost"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Add Freelance Post"
+                android:textSize="50sp"
+                android:layout_margin="8dp"
+                android:textStyle="bold"
+                />
+
+
+            <EditText
+                android:id="@+id/freelance_topic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/addfreelancepost"
+                android:layout_margin="8dp"
+                android:hint="@string/freelance_topic"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textSize="35dp" />
+
+            <EditText
+                android:id="@+id/freelance_work"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/freelance_topic"
+                android:layout_margin="8dp"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textSize="35sp"
+                android:hint="@string/freelance_work"/>
+
+            <EditText
+                android:id="@+id/freelance_deadline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/freelance_work"
+                android:layout_margin="8dp"
+                android:hint="@string/freelance_deadline"
+                android:inputType="date"
+                android:textColor="@color/black"
+                android:textSize="35sp" />
+            <EditText
+                android:id="@+id/freelance_skills"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/freelance_deadline"
+                android:layout_margin="8dp"
+                android:textColor="@color/black"
+                android:textSize="35sp"
+                android:hint="@string/freelance_skills"
+                android:inputType="text"/>
+
+            <EditText
+                android:id="@+id/freelance_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/freelance_skills"
+                android:layout_margin="8dp"
+                android:textColor="@color/black"
+                android:textSize="35sp"
+                android:hint="Name of Client"
+                android:inputType="text"/>
+
+
+            <EditText
+                android:id="@+id/freelance_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/freelance_name"
+                android:layout_margin="8dp"
+                android:textSize="35sp"
+                android:textColor="@color/black"
+                android:hint="@string/freelance_desc"
+                android:inputType="textMultiLine"/>
+
+            <EditText
+                android:id="@+id/freelance_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/freelance_desc"
+                android:layout_margin="8dp"
+                android:textSize="35sp"
+                android:textColor="@color/black"
+                android:hint="@string/freelance_price"
+                android:inputType="number"/>
+
+            <Button
+                android:id="@+id/freelance_postbtn"
+                android:text="@string/freelance_postbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:textSize="35sp"
+                android:layout_below="@id/freelance_price"
+                />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/sliderinput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/freelancepostadd"
+            android:elevation="10dp"
+            android:layout_margin="7dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/addsliderinput"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="Update Slider"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/inputimg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/addsliderinput"
+                    android:cropToPadding="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/addimg" />
+
+                <EditText
+                    android:id="@+id/sliderpos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/inputimg"
+                    android:hint="Position"/>
+
+                <Button
+                    android:id="@+id/confirminput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/sliderpos"
+                    android:text="Update"
+                    android:visibility="invisible"
+                    />
+
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+</ScrollView>

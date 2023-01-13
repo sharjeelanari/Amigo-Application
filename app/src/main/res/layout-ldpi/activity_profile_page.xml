@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".SocialMain.Social1.ProfilePage.ProfilePage">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/clubname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginBottom="-5dp"
+            android:layout_toEndOf="@id/clubImage"
+            android:textSize="20sp"
+            />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/clubImage"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/user"
+            android:scaleType="centerCrop"
+            />
+
+        <TextView
+            android:id="@+id/ClubVision"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bio:"
+            android:layout_marginStart="5dp"
+            android:textSize="14sp"
+            android:layout_below="@+id/clubname"
+            android:layout_toRightOf="@+id/clubImage"/>
+
+        <TextView
+            android:id="@+id/textrec1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Members"
+            android:layout_margin="5dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_below="@id/clubImage"/>
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/members"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textrec1" />
+
+        <TextView
+            android:id="@+id/textrec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Events"
+            android:layout_margin="5dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_below="@id/members"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/Events"
+            android:layout_width="match_parent"
+            android:background="@drawable/inputfield"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textrec" />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/clubprofiletabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Events"/>
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/clubprofilevp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/clubprofiletabs"
+            />
+
+
+
+    </RelativeLayout>
+
+    <!--    <Button-->
+    <!--        android:id="@+id/projectpostsbtn"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Project Post"-->
+    <!--        android:layout_below="@+id/Events"-->
+    <!--        android:layout_margin="5dp"-->
+    <!--        android:layout_centerHorizontal="true"-->
+    <!--        android:visibility="invisible"-->
+    <!--        />-->
+
+
+    <!--    <Button-->
+    <!--        android:id="@+id/socialpostbtn"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_below="@+id/Events"-->
+    <!--        android:layout_centerHorizontal="true"-->
+    <!--        android:layout_marginStart="5dp"-->
+    <!--        android:layout_marginTop="5dp"-->
+    <!--        android:layout_marginEnd="5dp"-->
+    <!--        android:layout_marginBottom="5dp"-->
+    <!--        android:minHeight="48dp"-->
+    <!--        android:text="SocialPost" />-->
+
+
+    <!--    <androidx.recyclerview.widget.RecyclerView-->
+    <!--        android:id="@+id/postsrecycler"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_below="@+id/socialpostsbtn"-->
+    <!--        />-->
+
+    <!--    <androidx.recyclerview.widget.RecyclerView-->
+    <!--        android:id="@+id/projectpostrecycler"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_below="@+id/socialpostsbtn"-->
+    <!--        android:visibility="invisible"-->
+    <!--        />-->
+
+
+
+</ScrollView>

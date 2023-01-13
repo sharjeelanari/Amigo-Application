@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="SportsAndCultural.Fragments.LiveHltsFrgmnt">
+
+
+        <ScrollView
+            android:id="@+id/LiveScrolview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/LiveRelative"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+<!--This Frame layout will fetch past highlights and live matches                -->
+
+                <FrameLayout
+                    android:id="@+id/Livecurrentlystreaming"
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_gravity="center"
+                        android:text="Live and recent highlight"
+                        />
+
+                </FrameLayout>
+                <TextView
+                    android:id="@+id/upcoming"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="UPCOMING"
+                    android:textStyle="bold"
+                    android:textSize="25dp"
+                    android:layout_margin="5dp"
+                    android:padding="5dp"
+                    android:layout_below="@+id/Livecurrentlystreaming"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/upcomingrecyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_below="@id/upcoming"
+                    android:background="@drawable/inputfield"
+                    />
+
+                <TextView
+                    android:id="@+id/pastevents"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PAST EVENTS"
+                    android:textStyle="bold"
+                    android:textSize="25dp"
+                    android:layout_margin="5dp"
+                    android:padding="5dp"
+                    android:layout_below="@+id/upcomingrecyclerview"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/pastevntrecyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_below="@id/pastevents"
+                    android:background="@drawable/inputfield"
+                    android:layout_margin="5dp"
+                    android:layout_height="wrap_content"/>
+
+
+            </RelativeLayout>
+        </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TechClubs.TechClubsActivity">
+
+
+<!--    <androidx.appcompat.widget.Toolbar-->
+<!--        android:id="@+id/toolbarid"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        >-->
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content">-->
+
+
+<!--            <TextView-->
+<!--                 android:id="@+id/applogo"-->
+<!--                 android:layout_width="wrap_content"-->
+<!--                 android:layout_height="wrap_content"-->
+<!--                 android:text="@string/app_logo"-->
+<!--                 android:layout_centerHorizontal="true"-->
+<!--                 android:textSize="25sp"-->
+<!--                 android:textStyle="bold"-->
+<!--                 android:layout_marginTop="8dp"-->
+<!--                />-->
+
+<!--            <Button-->
+<!--                android:id="@+id/socialbtn"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_alignParentRight="true"-->
+<!--                android:layout_marginRight="20dp"-->
+<!--                android:text="@string/socialbtn"/>-->
+<!--        </RelativeLayout>-->
+<!--    </androidx.appcompat.widget.Toolbar>-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/sclrelview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+      <TextView
+        android:id="@+id/techclub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upcoming events"
+        android:textStyle="normal"
+        android:layout_marginStart="20dp"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/upcomingrec"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@id/techclub"
+        android:background="@drawable/inputfield"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/techclubrecview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_below="@id/upcomingrec"
+        >
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</RelativeLayout>
+    </ScrollView>
+
+    </RelativeLayout>
+
+
+
+
